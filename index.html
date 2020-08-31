@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sandrostarr</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0 none;
+      background: none;
+    }
+    body {
+      font-weight: normal;
+      font-size: 11px;
+      font-family: Arial;
+      overflow-x: hidden;
+
+    }
+    #login-wrapper {
+      width: 270px;
+      left: 50%;
+      margin-left: -135px;
+      position: absolute;
+      margin-top: -135px;
+      top: 50%;
+    }
+/*    #login-form {
+      width: 270px;
+      background: #000;
+      height: 270px;
+      -webkit-border-radius: 135px;
+      -moz-border-radius: 135px;
+      border-radius: 135px;
+    }*/
+    ul li {
+      list-style: none;
+    }
+    .body-login-form .tab-content {
+      position: inherit;
+      padding: inherit;
+    }
+    .b-title {
+      text-align: center;
+      padding-top: 100px;
+      color: #000;
+      margin-bottom: 5px;
+      font-size: 27px;
+    }
+    .b-content {
+      font-size: 12px;
+      text-align: center;
+    }
+    .b-content_link {
+      color: #000;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .b-copyright {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .b-copyright__link {
+      color: #587b9d;
+    }
+    .b-text_lang_ru {
+      display: none;
+    }
+    #main-wrapper {
+      height: 1500px;  
+    }
+    .block {
+      height: 160px;
+      width: 270px;
+      background-color: grey;
+    }
+  </style>
+</head>
+<body class="body-login-form">
+<div id="main-wrapper">
+  <div id="overlay" class="hide"></div>
+  <div id="content" class="tab-content active" data-tabid="tab1"><div id="login-wrapper">
+    <div id="login-form">
+        <h2 class="b-title">sandrostarr</h2>
+        <div class="b-content">
+          <a class="b-content_link" href="https://www.instagram.com/sandrostarr.art/">instagram</a>
+          <a class="b-content_link" href="https://www.pinterest.ru/sandrostarrart/">pinterest</a>
+        </div>
+        <div class="block lax" data-lax-translate-y="(vh) -1000, (-elh) 1000"  data-lax-translate-x="(vh) -1300, (-elh) 2000" data-lax-anchor="self" data-lax-opacity="0 1, 100 0, 200 100 | loop=200 offset=100 speed=2"></div>
+      </div>
+    </div>
+  </div></div>
+</div>
+</body>
+</html>
+
+<script src="lib/lax.min.js" ></script>
+
+<script>
+  
+window.onload = function() {
+  lax.setup() // init
+
+  const updateLax = () => {
+    lax.update(window.scrollY)
+    window.requestAnimationFrame(updateLax)
+  }
+
+  window.requestAnimationFrame(updateLax)
+}
+
+</script>
