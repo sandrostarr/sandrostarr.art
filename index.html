@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68889755-2"></script>
@@ -26,98 +26,30 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/66948610" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
-
-  <title>sandrostarr</title>
+  
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      border: 0 none;
-      background: none;
-    }
-    body {
-      font-weight: normal;
-      font-size: 11px;
-      font-family: Arial;
-      overflow-x: hidden;
-
-    }
-    #login-wrapper {
-      width: 270px;
-      left: 50%;
-      margin-left: -135px;
-      position: absolute;
-      margin-top: -135px;
-      top: 50%;
-    }
-/*    #login-form {
-      width: 270px;
-      background: #000;
-      height: 270px;
-      -webkit-border-radius: 135px;
-      -moz-border-radius: 135px;
-      border-radius: 135px;
-    }*/
-    ul li {
-      list-style: none;
-    }
-    .body-login-form .tab-content {
-      position: inherit;
-      padding: inherit;
-    }
-    .b-title {
-      text-align: center;
-      padding-top: 100px;
-      color: #000;
-      margin-bottom: 5px;
-      font-size: 27px;
-    }
-    .b-content {
-      font-size: 12px;
-      text-align: center;
-    }
-    .b-content_link {
-      color: #000;
-      display: block;
-      margin-bottom: 5px;
-    }
-    .b-copyright {
-      margin-top: 40px;
-      text-align: center;
-    }
-    .b-copyright__link {
-      color: #587b9d;
-    }
-    .b-text_lang_ru {
-      display: none;
-    }
-    #main-wrapper {
-      height: 1450px;  
-    }
-    .block {
-      height: 160px;
-      width: 270px;
-      background-color: grey;
-    }
-  </style>
+  <title>sandrostarr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 </head>
-<body class="body-login-form">
-    
-<div id="main-wrapper">
-  <div id="overlay" class="hide"></div>
-  <div id="content" class="tab-content active" data-tabid="tab1"><div id="login-wrapper">
-    <div id="login-form">
-        <h2 class="b-title">sandrostarr</h2>
-        <div class="b-content">
-          <a class="b-content_link" href="https://www.instagram.com/sandrostarr.art/">instagram</a>
-          <a class="b-content_link" href="https://www.pinterest.ru/sandrostarrart/">pinterest</a>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="block" id="wrap">
+        <h1>sandrostarr</h1>
+        <div class="socials">
+          <a href="#">вк</a>
+          <a href="#">инст</a>
+          <a href="#">пинт</a>
         </div>
       </div>
+      
     </div>
-  </div>
-</div>
-</div>
+  </header>
 </body>
 </html>
 
@@ -135,5 +67,21 @@ window.onload = function() {
 
   window.requestAnimationFrame(updateLax)
 }
+
+
+
+
+var wrap = $('#wrap');
+
+$(window).on('scroll', function(e) {
+
+  if ($(this).scrollTop() > 370) {
+    wrap.addClass('fixed');
+  } else {
+    wrap.removeClass('fixed');
+  }
+
+});
+
 
 </script>

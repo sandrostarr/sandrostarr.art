@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    height: 3200px;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.header h1 {
+    font-family: 'Fauna One', serif;
+    font-size: 60px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 400px;
+}
+.fixed {
+    position: fixed;
+    padding-top: 0;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.fixed h1{
+    padding-top: 0;
+}
+.socials {
+    text-align: center;
+}
