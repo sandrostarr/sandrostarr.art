@@ -28,5 +28,21 @@
     padding-top: 0;
 }
 .socials {
+    margin-top: 10px;
     text-align: center;
+}
+.icon {
+    display: inline-block;
+    margin: 0 5px;
+    width: 35px;
+    height: 35px;
+}
+.icon_inst {
+    background: url(../icons/socials/instagram-logo.png) no-repeat center center/cover;  
+}
+.icon_pint {
+    background: url(../icons/socials/pinterest-logo.png) no-repeat center center/cover; 
+}
+.icon_fb {
+    background: url(../icons/socials/facebook-logo.png) no-repeat center center/cover; 
 }
