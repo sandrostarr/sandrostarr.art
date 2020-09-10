@@ -6,25 +6,29 @@
 .header {
     height: 3200px;  
     overflow: hidden; 
+    position: relative;
 }
 .container {
     width: 1140px;
     margin: 0 auto;
     position: relative;
- 
+    height: 100vh;
 }
 .block {
     width: 1140px;
     position: absolute;
-
     z-index: 10;
+    top: 50%;
+    transform: translate(0, -50%);
+
 }
 .header h1 {
     font-family: 'Fauna One', serif;
     font-size: 60px;
     text-align: center;
     vertical-align: middle;
-    padding-top: 400px;
+
+    /* padding-top: 400px; */
 }
 .fixed {
     position: fixed;
@@ -32,9 +36,11 @@
     top: 30px;
     left: 50%;
     transform: translate(-50%);
+
 }
 .fixed h1{
     padding-top: 0;
+    position: relative;
 }
 .socials {
     margin-top: 10px;
@@ -58,8 +64,45 @@
 .background {
     z-index: 3;
 }
+/* .b_cont {
+    position: absolute;
+    left: 50%;
+    transform: translate(-150%, -150%);
+} */
 .ab1 {
     position: fixed;
-    top: 430px;
-    left: 900px;
+    top: 30%;
+    left: 45%;
+}
+
+@media (max-width: 1200px) {
+    .container, .block {
+        width: 960px;
+    }
+}
+@media (max-width: 991px) {
+    .container, .block {
+        width: 720px;
+    }
+}
+@media (max-width: 767px) {
+    .container, .block {
+        width: 540px;
+    }
+    .header h1 {
+        font-size: 50px;
+    }
+}
+@media (max-width:575px) {
+    .container, .block {
+        width: 100%;
+    }
+    .header h1 {
+        font-size: 40px;
+    }
+    .icon {
+        margin: 0 10px;
+        width: 35px;
+        height: 35px;
+    }
 }
