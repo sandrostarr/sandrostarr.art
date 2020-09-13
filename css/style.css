@@ -63,6 +63,7 @@
     background: url(../icons/socials/facebook-logo.png) no-repeat center center/cover; 
 }
 .background {
+    position: relative;
     z-index: 3;
 }
 /* .b_cont {
@@ -70,17 +71,68 @@
     left: 50%;
     transform: translate(-150%, -150%);
 } */
-.ab1 {
+.abstract {
     position: fixed;
-    top: 30%;
-    left: 45%;
+}
+.ab1 {
+    height: 570px;
+    top: 12%;
+    left: 46%;
+}
+.ab2 {
+    height: 460px;
+    top: 17%;
+    left: 32%;
+}
+.ab3 {
+    height: 390px;
+    top: 47%;
+    left: 34%;
+}
+.ab4 {
+    height: 270px;
+    top: 22%;
+    left: 36%;
+}
+.ab5 {
+    height: 570px;
+    top: 13%;
+    left: 51%;
+}
+.ab6 {
+    height: 390px;
+    top: 52%;
+    left: 32%;
+}
+.ab7 {
+    height: 450px;
+    top: 19%;
+    left: 35%;
+}
+.ab8 {
+    height: 290px;
+    top: 18%;
+    left: 35%;
+}
+.ab9 {
+    height: 320px;
+    top: 63%;
+    left: 30%;
+}
+.ab10 {
+    height: 210px;
+    top: 14%;
+    left: 53%;
 }
 
+
 .gallery {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     /*align-content: space-around; */
+    z-index: 8;
 }
 
 .gallery_item {
@@ -122,6 +174,56 @@
 @media (max-width: 1200px) {
     .container, .block {
         width: 960px;
+    }
+    .ab1 {
+        height: 500px;
+        top: 16%;
+        left: 47%;
+    }
+    .ab2 {
+        height: 390px;
+        top: 24%;
+        left: 34%;
+    }
+    .ab3 {
+        height: 320px;
+        top: 56%;
+        left: 33%;
+    }
+    .ab4 {
+        height: 230px;
+        top: 23%;
+        left: 38%;
+    }
+    .ab5 {
+        height: 500px;
+        top: 18%;
+        left: 52%;
+    }
+    .ab6 {
+        height: 320px;
+        top: 60%;
+        left: 32%;
+    }
+    .ab7 {
+        height: 390px;
+        top: 26%;
+        left: 37%;
+    }
+    .ab8 {
+        height: 230px;
+        top: 19%;
+        left: 38%;
+    }
+    .ab9 {
+        height: 270px;
+        top: 68%;
+        left: 32%;
+    }
+    .ab10 {
+        height: 160px;
+        top: 17%;
+        left: 59%;
     }
 }
 @media (max-width: 991px) {
