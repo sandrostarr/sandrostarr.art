@@ -1,0 +1,264 @@
+@media (max-width: 1200px) {
+    .container, .block {
+        width: 960px;
+    }
+    .gallery_item_link {
+        margin-bottom: 30px;
+    }
+    .gallery_item {
+        height: 260px;
+        width: 300px;
+    }
+    .ab1 {
+        height: 500px;
+        top: 16%;
+        left: 47%;
+    }
+    .ab2 {
+        height: 390px;
+        top: 24%;
+        left: 34%;
+    }
+    .ab3 {
+        height: 320px;
+        top: 56%;
+        left: 33%;
+    }
+    .ab4 {
+        height: 230px;
+        top: 23%;
+        left: 38%;
+    }
+    .ab5 {
+        height: 500px;
+        top: 18%;
+        left: 52%;
+    }
+    .ab6 {
+        height: 320px;
+        top: 60%;
+        left: 32%;
+    }
+    .ab7 {
+        height: 390px;
+        top: 26%;
+        left: 37%;
+    }
+    .ab8 {
+        height: 230px;
+        top: 19%;
+        left: 38%;
+    }
+    .ab9 {
+        height: 270px;
+        top: 68%;
+        left: 32%;
+    }
+    .ab10 {
+        height: 160px;
+        top: 17%;
+        left: 59%;
+    }
+}
+@media (max-width: 991px) {
+    .container, .block {
+        width: 720px;
+    }
+    .gallery_item_link {
+        margin-bottom: 30px;
+    }
+    .gallery_item {
+        height: 300px;
+        width: 350px;
+    }
+    .ab1 {
+        height: 420px;
+        top: 16%;
+        left: 47%;
+    }
+    .ab2 {
+        height: 390px;
+        top: 24%;
+        left: 34%;
+    }
+    .ab3 {
+        height: 260px;
+        top: 47%;
+        left: 35%;
+    }
+    .ab4 {
+        height: 230px;
+        top: 23%;
+        left: 38%;
+    }
+    .ab5 {
+        height: 420px;
+        top: 18%;
+        left: 52%;
+    }
+    .ab6 {
+        height: 260px;
+        top: 51%;
+        left: 34%;
+    }
+    .ab7 {
+        height: 390px;
+        top: 26%;
+        left: 37%;
+    }
+    .ab8 {
+        height: 230px;
+        top: 19%;
+        left: 38%;
+    }
+    .ab9 {
+        height: 220px;
+        top: 67%;
+        left: 33%;
+    }
+    .ab10 {
+        height: 140px;
+        top: 17%;
+        left: 59%;
+    }
+}
+@media (max-width: 767px) {
+    .container, .block {
+        width: 540px;
+    }
+    .header h1 {
+        font-size: 50px;
+    }
+    .gallery_item_link {
+        margin-bottom: 20px;
+    }
+    .gallery_item {
+        height: 230px;
+        width: 270px;
+    }
+    .ab1 {
+        height: 360px;
+        top: 16%;
+        left: 47%;
+    }
+    .ab2 {
+        height: 330px;
+        top: 24%;
+        left: 28%;
+    }
+    .ab3 {
+        height: 230px;
+        top: 44%;
+        left: 32%;
+    }
+    .ab4 {
+        height: 200px;
+        top: 19%;
+        left: 33%;
+    }
+    .ab5 {
+        height: 360px;
+        top: 18%;
+        left: 52%;
+    }
+    .ab6 {
+        height: 230px;
+        top: 48%;
+        left: 31%;
+    }
+    .ab7 {
+        height: 330px;
+        top: 26%;
+        left: 35%;
+    }
+    .ab8 {
+        height: 200px;
+        top: 16%;
+        left: 33%;
+    }
+    .ab9 {
+        height: 180px;
+        top: 61%;
+        left: 31%;
+    }
+    .ab10 {
+        height: 110px;
+        top: 17%;
+        left: 61%;
+    }
+}
+@media (max-width:575px) {
+    .container, .block {
+        width: 100%;
+    }
+    .header h1 {
+        font-size: 40px;
+    }
+    .icon {
+        margin: 0 10px;
+        width: 35px;
+        height: 35px;
+    }
+    .gallery_item {
+        height: 250px;
+        width: 310px;
+    }
+    .gallery_item {
+        /* align-items: flex-start; */
+        justify-content: flex-end;
+    }
+    .gallery_item span {
+        display: block;
+        opacity: 0.5;
+    }
+    .ab1 {
+        height: 360px;
+        top: 16%;
+        left: 41%;
+    }
+    .ab2 {
+        height: 330px;
+        top: 25%;
+        left: 16%;
+    }
+    .ab3 {
+        height: 230px;
+        top: 47%;
+        left: 16%;
+    }
+    .ab4 {
+        height: 200px;
+        top: 18%;
+        left: 5%;
+    }
+    .ab5 {
+        height: 360px;
+        top: 18%;
+        left: 51%;
+    }
+    .ab6 {
+        height: 230px;
+        top: 49%;
+        left: 26%;
+    }
+    .ab7 {
+        height: 330px;
+        top: 30%;
+        left: 11%;
+    }
+    .ab8 {
+        height: 200px;
+        top: 16%;
+        left: 13%;
+    }
+    .ab9 {
+        height: 180px;
+        top: 59%;
+        left: 18%;
+    }
+    .ab10 {
+        height: 130px;
+        top: 15%;
+        left: 69%;
+    }
+}
