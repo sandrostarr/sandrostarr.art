@@ -135,10 +135,52 @@
     z-index: 8;
 }
 
+.gallery_item_link {
+    margin-bottom: 40px;
+    transition: all 0.5s ease-out;
+    text-decoration: none;
+    position: relative;
+}
+.overlay {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all 0.5s ease-out;
+}
+
+.gallery_item_link:hover {
+    transform: translateY(-5px);
+    transition: all 0.5s ease-out;
+}
+.gallery_item_link:hover .gallery_item span{
+    display: block;
+}
+
+.gallery_item_link:hover .overlay{
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
 .gallery_item {
     height: 370px;
     width: 430px;
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gallery_item span {
+    display: none;
+    background-color: #000;
+    color: #ffffff;
+    padding: 5px;
+    position: relative;
+    z-index: 12;
 }
 
 .gallery_item.item_1 {
@@ -175,10 +217,12 @@
     .container, .block {
         width: 960px;
     }
+    .gallery_item_link {
+        margin-bottom: 30px;
+    }
     .gallery_item {
         height: 260px;
         width: 300px;
-        margin-bottom: 30px;
     }
     .ab1 {
         height: 500px;
@@ -235,10 +279,12 @@
     .container, .block {
         width: 720px;
     }
+    .gallery_item_link {
+        margin-bottom: 30px;
+    }
     .gallery_item {
         height: 300px;
         width: 350px;
-        margin-bottom: 30px;
     }
     .ab1 {
         height: 420px;
@@ -298,10 +344,12 @@
     .header h1 {
         font-size: 50px;
     }
+    .gallery_item_link {
+        margin-bottom: 20px;
+    }
     .gallery_item {
         height: 230px;
         width: 270px;
-        margin-bottom: 20px;
     }
     .ab1 {
         height: 360px;
@@ -369,7 +417,14 @@
     .gallery_item {
         height: 250px;
         width: 310px;
-        margin-bottom: 20px;
+    }
+    .gallery_item {
+        /* align-items: flex-start; */
+        justify-content: flex-end;
+    }
+    .gallery_item span {
+        display: block;
+        opacity: 0.5;
     }
     .ab1 {
         height: 360px;
