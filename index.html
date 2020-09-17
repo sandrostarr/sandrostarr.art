@@ -31,8 +31,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>sandrostarr | abstract artist</title>
   <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="plugins/dist/css/glightbox.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="css/blocks/media.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/blocks/media.css">
   <script
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -50,63 +51,67 @@
         </div>
       </div>
     </div>
+    <div class="glightbox-desc custom-desc1">
+      <p>The content of this div will be used as the slide description</p>
+      <p>You can add links and any HTML you want</p>
+  </div>
     <div class="gallery">
-      <a class="gallery_item_link" href="#">
+      <a class="gallery_item_link glightbox" href="/imgs/img2.jpg" data-glightbox="title: sandrostarr_1111; description: .custom-desc1; descPosition: left;">
         <div class="gallery_item item_1">
           <span>2020</span>
           <span>sandrostarr_12345678</span>
           <div class="overlay"></div>
         </div>
       </a>
-      <a class="gallery_item_link" href="#">
+      <a class="gallery_item_link glightbox" href="/imgs/img3.jpg" data-glightbox="title: sandrostarr_2222; description: this is the slide description; descPosition: right;">
         <div class="gallery_item item_2">          
           <span>2020</span>
           <span>sandrostarr_12345678</span>
           <div class="overlay"></div></div>
       </a>
-      <a class="gallery_item_link" href="#">
+      <a class="gallery_item_link glightbox" href="/imgs/img1.jpg" data-glightbox="title: sandrostarr_3333; description: this is the slide description">
         <div class="gallery_item item_3">          
           <span>2020</span>
           <span>sandrostarr_12345678</span>
           <div class="overlay"></div></div>
       </a>
-      <a class="gallery_item_link" href="#">
+      <a class="gallery_item_link glightbox" href="/imgs/img1.jpg" data-glightbox="title: sandrostarr_4444; description: this is the slide description">
         <div class="gallery_item item_4">          
           <span>2020</span>
           <span>sandrostarr_12345678</span>
           <div class="overlay"></div></div>
       </a>
-      <a class="gallery_item_link" href="#">
+      <a class="gallery_item_link glightbox" href="/imgs/img2.jpg" data-glightbox="title: sandrostarr_5555; description: this is the slide description">
         <div class="gallery_item item_5">          
           <span>2020</span>
           <span>sandrostarr_12345678</span>
           <div class="overlay"></div></div>
       </a>
-      <a class="gallery_item_link" href="#">
+      <a class="gallery_item_link glightbox" href="/imgs/img3.jpg" data-glightbox="title: sandrostarr_6666; description: this is the slide description">
         <div class="gallery_item item_6">          
           <span>2020</span>
           <span>sandrostarr_12345678</span>
           <div class="overlay"></div></div>
       </a>
-      <a class="gallery_item_link" href="#">
+      <a class="gallery_item_link glightbox" href="/imgs/img2.jpg" data-glightbox="title: sandrostarr_7777; description: this is the slide description">
         <div class="gallery_item item_7">          
           <span>2020</span>
           <span>sandrostarr_12345678</span>
           <div class="overlay"></div></div>
       </a>
-      <a class="gallery_item_link" href="#">
+      <a class="gallery_item_link glightbox" href="/imgs/img3.jpg" data-glightbox="title: sandrostarr_8888; description: this is the slide description">
         <div class="gallery_item item_8">          
           <span>2020</span>
           <span>sandrostarr_12345678</span>
           <div class="overlay"></div></div>
       </a>
-      <a class="gallery_item_link" href="#">
+      <a class="gallery_item_link glightbox" href="/imgs/img1.jpg" data-glightbox="title: sandrostarr_9999; description: this is the slide description">
         <div class="gallery_item item_9">          
           <span>2020</span>
           <span>sandrostarr_12345678</span>
           <div class="overlay"></div></div>
       </a>
-      <a class="gallery_item_link" href="#">
+      <a class="gallery_item_link glightbox" href="/imgs/img3.jpg" data-glightbox="title: sandrostarr_1234; description: this is the slide description">
         <div class="gallery_item item_10">          
           <span>2020</span>
           <span>sandrostarr_12345678</span>
@@ -138,35 +143,26 @@
 </html>
 
 <script src="lib/lax.min.js" ></script>
+<script src="plugins/dist/js/glightbox.js"></script>
 
 <script>
-  
 window.onload = function() {
   lax.setup() // init
-
   const updateLax = () => {
     lax.update(window.scrollY)
     window.requestAnimationFrame(updateLax)
   }
-
   window.requestAnimationFrame(updateLax)
 }
 
-
-
-
 var wrap = $('#wrap');
-
 $(window).on('scroll', function(e) {
-
   if ($(this).scrollTop() >= window.innerHeight / 2 - 80) {
-
     wrap.addClass('fixed');
   } else {
     wrap.removeClass('fixed');
   }
-
 });
 
-
+var lightbox = GLightbox();
 </script>
