@@ -24,7 +24,10 @@
 
 }
 .header h1 {
-    font-family: 'Fauna One', serif;
+    /* font-family: 'Fauna One', serif;
+    font-family: 'Kufam', cursive;
+    font-family: 'Quicksand', sans-serif; */
+    font-family: 'Orbitron', sans-serif;
     font-size: 60px;
     text-align: center;
     vertical-align: middle;
@@ -50,18 +53,22 @@
 .icon {
     display: inline-block;
     margin: 0 5px;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
 }
-.icon_inst {
-    background: url(../icons/socials/instagram-logo.png) no-repeat center center/cover;  
+.icon_instagram {
+    background: url(../icons/socials/min/instagram.png) no-repeat center center/contain;  
 }
-.icon_pint {
-    background: url(../icons/socials/pinterest-logo.png) no-repeat center center/cover; 
+.icon_pinterest {
+    background: url(../icons/socials/min/pinterest.png) no-repeat center center/contain; 
 }
-.icon_fb {
-    background: url(../icons/socials/facebook-logo.png) no-repeat center center/cover; 
+.icon_etsy {
+    background: url(../icons/socials/min/etsy.png) no-repeat center center/contain; 
 }
+.icon_mail {
+    background: url(../icons/socials/min/mail.png) no-repeat center center/contain; 
+}
+
 .background {
     position: relative;
     z-index: 3;
