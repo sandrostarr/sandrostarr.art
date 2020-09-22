@@ -50,6 +50,10 @@
     margin-top: 10px;
     text-align: center;
 }
+.socials_icon:hover {
+    opacity: .8;
+    transition: all 0.5s ease-out;
+}
 .icon {
     display: inline-block;
     margin: 0 5px;
